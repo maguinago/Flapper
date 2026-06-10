@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flapper</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell" aria-label="Flapper game">
+      <section class="game-card">
+        <div class="scoreboard" aria-live="polite">
+          <span class="score-label">Score</span>
+          <span id="score" class="score-value">0</span>
+          <span class="score-label">Best</span>
+          <span id="bestScore" class="score-value">0</span>
+        </div>
+
+        <div class="canvas-wrap">
+          <canvas id="gameCanvas" width="432" height="768" aria-label="Flapper arcade game canvas"></canvas>
+          <div id="overlay" class="overlay">
+            <h1>Flapper</h1>
+            <p class="tagline">Tap, click, or press <kbd>Space</kbd> to flap through the pipes.</p>
+            <button id="startButton" type="button">Start Game</button>
+          </div>
+        </div>
+
+        <div class="controls" aria-label="Game controls">
+          <button id="flapButton" type="button">Flap</button>
+          <button id="restartButton" type="button">Restart</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
